@@ -1,5 +1,6 @@
 # Syinfo
 ## Visor de información básica y avanzada del equipo.
+![Syinfo 0 8 5 por elstef41](https://user-images.githubusercontent.com/19848495/169536522-8f77a5b9-67d1-4587-b02d-a3f3089caa05.png)
 
 ### Funciones principales:
 - Listas organizados en distintas pestañas.
