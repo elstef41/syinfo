@@ -1,6 +1,8 @@
 # Syinfo
+[![Lanzamiento actual](https://img.shields.io/github/v/release/elstef41/syinfo?include_prereleases)](https://github.com/elstef41/syinfo/releases)
+
 ![Syinfo 0 8 5 por elstef41](https://user-images.githubusercontent.com/19848495/169536522-8f77a5b9-67d1-4587-b02d-a3f3089caa05.png)
-## Visor de información básica y avanzada del equipo.
+## Un visor de información básica y avanzada del equipo para Microsoft Windows.
 
 ### Funciones principales:
 - Listas organizadas en distintas pestañas.
