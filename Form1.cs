@@ -179,85 +179,86 @@ namespace syinfo
                 todoAlm.Add(m["TracksPerCylinder"].ToString());
                 todoAlm.Add(m["InterfaceType"].ToString());Environment.GetLogicalDrives();
             }
-            string cpy = "";
             // Básico
-            dataGridView1.Rows.Add("Compilación", System.Environment.OSVersion.Version, cpy);
-            dataGridView1.Rows.Add("Nombre del equipo", System.Environment.MachineName, cpy);
-            dataGridView1.Rows.Add("Arquitectura", todoCpu[6], cpy);
-            dataGridView1.Rows.Add("Nombre de usuario activo", System.Environment.UserName, cpy);
-            dataGridView1.Rows.Add("Grupo de trabajo", todoSys[2], cpy);
-            dataGridView1.Rows.Add("Directorio del sistema", System.Environment.SystemDirectory, cpy);
-            dataGridView1.Rows.Add("Cantidad de núcleos", System.Environment.ProcessorCount, cpy);
-            dataGridView1.Rows.Add("Tiempo trancurrido", Environment.TickCount / 3600000 + " horas, " + Environment.TickCount / 60000 + " minutos y " + Environment.TickCount / 1000 + " segundos.", cpy);
+            dataGridView1.Rows.Add("Compilación", System.Environment.OSVersion.Version);
+            dataGridView1.Rows.Add("Nombre del equipo", System.Environment.MachineName);
+            dataGridView1.Rows.Add("Arquitectura", todoCpu[6]);
+            dataGridView1.Rows.Add("Nombre de usuario activo", System.Environment.UserName);
+            dataGridView1.Rows.Add("Grupo de trabajo", todoSys[2]);
+            dataGridView1.Rows.Add("Directorio del sistema", System.Environment.SystemDirectory);
+            dataGridView1.Rows.Add("Cantidad de núcleos", System.Environment.ProcessorCount);
+            dataGridView1.Rows.Add("Tiempo trancurrido", Environment.TickCount / 3600000 + " horas, " + Environment.TickCount / 60000 + " minutos y " + Environment.TickCount / 1000 + " segundos.");
 
             // Sistema operativo
-            dataGridView2.Rows.Add("Sistema operativo", SC.ver(), cpy);
-            dataGridView2.Rows.Add("Versión completa de Windows NT", System.Environment.OSVersion.VersionString, cpy);
-            dataGridView2.Rows.Add("Versión del núcleo", System.Environment.OSVersion.Version, cpy);
-            dataGridView2.Rows.Add("Compilación", System.Environment.OSVersion.Version.Build, cpy);
-            dataGridView2.Rows.Add("Plataforma", System.Environment.OSVersion.Platform, cpy);
+            dataGridView2.Rows.Add("Sistema operativo", SC.ver());
+            dataGridView2.Rows.Add("Versión completa de Windows NT", System.Environment.OSVersion.VersionString);
+            dataGridView2.Rows.Add("Versión del núcleo", System.Environment.OSVersion.Version);
+            dataGridView2.Rows.Add("Compilación", System.Environment.OSVersion.Version.Build);
+            dataGridView2.Rows.Add("Plataforma", System.Environment.OSVersion.Platform);
             if (Environment.OSVersion.ServicePack == "")
             {
-                dataGridView2.Rows.Add("Service Pack", "No aplica", cpy);
+                dataGridView2.Rows.Add("Service Pack", "No aplica");
             }
             else
             {
-                dataGridView2.Rows.Add("Service Pack", Environment.OSVersion.ServicePack, cpy);
+                dataGridView2.Rows.Add("Service Pack", Environment.OSVersion.ServicePack);
             }
-            dataGridView2.Rows.Add("Grupo de trabajo", todoSys[2], cpy);
+            dataGridView2.Rows.Add("Grupo de trabajo", todoSys[2]);
 
             // Componentes internos
-            dataGridView3.Rows.Add("Memoria RAM", System.Environment.Version.Major + "." + Environment.Version.MajorRevision + "." + Environment.Version.Minor + "." + Environment.Version.MinorRevision, cpy);
-            dataGridView3.Rows.Add("Nombre del procesador", todoCpu[2], cpy);
-            dataGridView3.Rows.Add("ID del procesador", todoCpu[3], cpy);
-            dataGridView3.Rows.Add("Dirección del procesador", todoCpu[0], cpy);
-            dataGridView3.Rows.Add("Cantidad de núcleos", System.Environment.ProcessorCount, cpy);
-            dataGridView3.Rows.Add("Estado de arranque", todoSys[0], cpy);
-            dataGridView3.Rows.Add("Soporte para memoria ROM", todoSys[1], cpy);
-            dataGridView3.Rows.Add("Estado térmico", todoSys[3], cpy);
-            dataGridView3.Rows.Add("Soporte para cambio en caliente", todoPhy[1], cpy);
-            dataGridView3.Rows.Add("BUS", todoPhy[2], cpy);
+            dataGridView3.Rows.Add("Memoria RAM", System.Environment.Version.Major + "." + Environment.Version.MajorRevision + "." + Environment.Version.Minor + "." + Environment.Version.MinorRevision);
+            dataGridView3.Rows.Add("Nombre del procesador", todoCpu[2]);
+            dataGridView3.Rows.Add("ID del procesador", todoCpu[3]);
+            dataGridView3.Rows.Add("Dirección del procesador", todoCpu[0]);
+            dataGridView3.Rows.Add("Cantidad de núcleos", System.Environment.ProcessorCount);
+            dataGridView3.Rows.Add("Estado de arranque", todoSys[0]);
+            dataGridView3.Rows.Add("Soporte para memoria ROM", todoSys[1]);
+            dataGridView3.Rows.Add("Estado térmico", todoSys[3]);
+            dataGridView3.Rows.Add("Soporte para cambio en caliente", todoPhy[1]);
+            dataGridView3.Rows.Add("BUS", todoPhy[2]);
 
             // CPU
-            dataGridView4.Rows.Add("ID", todoCpu[3], cpy);
-            dataGridView4.Rows.Add("Nombre", todoCpu[2], cpy);
-            dataGridView4.Rows.Add("Dirección", todoCpu[0], cpy);
-            dataGridView4.Rows.Add("Velocidad (MHz)", todoCpu[8], cpy);
-            dataGridView4.Rows.Add("Velocidad máxima (MHz)", todoCpu[1], cpy);
-            dataGridView4.Rows.Add("Arquitectura", todoCpu[6], cpy);
-            dataGridView4.Rows.Add("Cantidad de núcleos", System.Environment.ProcessorCount, cpy);
-            dataGridView4.Rows.Add("Estado", todoCpu[4], cpy);
-            dataGridView4.Rows.Add("Soporte para administrar la energía", todoCpu[5], cpy);
-            dataGridView4.Rows.Add("Capacidad de voltaje", todoCpu[7], cpy);
+            dataGridView4.Rows.Add("ID", todoCpu[3]);
+            dataGridView4.Rows.Add("Nombre", todoCpu[2]);
+            dataGridView4.Rows.Add("Dirección", todoCpu[0]);
+            dataGridView4.Rows.Add("Velocidad (MHz)", todoCpu[8]);
+            dataGridView4.Rows.Add("Velocidad máxima (MHz)", todoCpu[1]);
+            dataGridView4.Rows.Add("Arquitectura", todoCpu[6]);
+            dataGridView4.Rows.Add("Cantidad de núcleos", System.Environment.ProcessorCount);
+            dataGridView4.Rows.Add("Estado", todoCpu[4]);
+            dataGridView4.Rows.Add("Soporte para administrar la energía", todoCpu[5]);
+            dataGridView4.Rows.Add("Capacidad de voltaje", todoCpu[7]);
 
             // Memorias
-            dataGridView5.Rows.Add("Tamaño total del disco en bytes", todoAlm[0], cpy);
-            dataGridView5.Rows.Add("Particiones detectadas en disco duro principal", todoAlm[1], cpy);
-            dataGridView5.Rows.Add("Cabezales en todos los discos montados", todoAlm[2], cpy);
-            dataGridView5.Rows.Add("Pistas", todoAlm[3], cpy);
-            dataGridView5.Rows.Add("Nùmero de serie", todoAlm[4], cpy);
-            dataGridView5.Rows.Add("Pistas por cilindro", todoAlm[5], cpy);
-            dataGridView5.Rows.Add("Interfaz", todoAlm[6], cpy);
+            dataGridView5.Rows.Add("Tamaño total del disco en bytes", todoAlm[0]);
+            dataGridView5.Rows.Add("Particiones detectadas en disco duro principal", todoAlm[1]);
+            dataGridView5.Rows.Add("Cabezales en todos los discos montados", todoAlm[2]);
+            dataGridView5.Rows.Add("Pistas", todoAlm[3]);
+            dataGridView5.Rows.Add("Nùmero de serie", todoAlm[4]);
+            dataGridView5.Rows.Add("Pistas por cilindro", todoAlm[5]);
+            dataGridView5.Rows.Add("Interfaz", todoAlm[6]);
 
             // Software
-            dataGridView6.Rows.Add("Sistema operativo y compilación", SC.ver() + ", " + System.Environment.OSVersion.Version + ", " + System.Environment.OSVersion.Platform, cpy);
-            dataGridView6.Rows.Add("Directorio del sistema", System.Environment.SystemDirectory, cpy);
-            dataGridView6.Rows.Add("Límite de opción de arranque", todoSys[4], cpy);
-            dataGridView6.Rows.Add("Arquitectura", todoCpu[6], cpy);
-            dataGridView6.Rows.Add("Ubicación de la carpeta temporal", Environment.GetEnvironmentVariable("TEMP"), cpy);
-            dataGridView6.Rows.Add("Tiempo trancurrido", Environment.TickCount / 3600000 + " horas, " + Environment.TickCount / 60000 + " minutos y " + Environment.TickCount / 1000 + " segundos.", cpy);
+            dataGridView6.Rows.Add("Sistema operativo y compilación", SC.ver() + ", " + System.Environment.OSVersion.Version + ", " + System.Environment.OSVersion.Platform);
+            dataGridView6.Rows.Add("Directorio del sistema", System.Environment.SystemDirectory);
+            dataGridView6.Rows.Add("Límite de opción de arranque", todoSys[4]);
+            dataGridView6.Rows.Add("Arquitectura", todoCpu[6]);
+            dataGridView6.Rows.Add("Ubicación de la carpeta temporal", Environment.GetEnvironmentVariable("TEMP"));
+            dataGridView6.Rows.Add("Tiempo trancurrido", Environment.TickCount / 3600000 + " horas, " + Environment.TickCount / 60000 + " minutos y " + Environment.TickCount / 1000 + " segundos.");
 
-            toolStripStatusLabel1.Text = "Última actualización: " + DateTime.UtcNow.ToString("dd/MM/yy hh:mm:ss");
+            // Variables de entorno
+            var EnV = Environment.GetEnvironmentVariables();
+            foreach (DictionaryEntry i in EnV)
+            {
+                dataGridView7.Rows.Add(i.Key, i.Value);
+            }
+
+            toolStripStatusLabel1.Text = "Última actualización: " + DateTime.Now.ToString("dd/MM/yy hh:mm:ss");
             return true;
         }
         private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new acercade().ShowDialog();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void refrescarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -268,6 +269,8 @@ namespace syinfo
             dataGridView3.Rows.Clear();
             dataGridView4.Rows.Clear();
             dataGridView5.Rows.Clear();
+            dataGridView6.Rows.Clear();
+            dataGridView7.Rows.Clear();
             Carga();
             label1.Visible = false;
         }
@@ -352,6 +355,15 @@ namespace syinfo
                                 foreach (DataGridViewRow Row in dataGridView6.Rows)
                                 {
                                     foreach (DataGridViewColumn Column in dataGridView6.Columns)
+                                    {
+                                        if (Row.Cells[Column.Index].FormattedValue.ToString() != "") { dataTXT += Row.Cells[Column.Index].FormattedValue.ToString() + " | "; }
+                                    }
+                                    dataTXT += Environment.NewLine;
+                                }
+                                dataTXT += Environment.NewLine + Environment.NewLine + " // Variables de entorno" + Environment.NewLine;
+                                foreach (DataGridViewRow Row in dataGridView7.Rows)
+                                {
+                                    foreach (DataGridViewColumn Column in dataGridView7.Columns)
                                     {
                                         if (Row.Cells[Column.Index].FormattedValue.ToString() != "") { dataTXT += Row.Cells[Column.Index].FormattedValue.ToString() + " | "; }
                                     }
@@ -493,18 +505,21 @@ namespace syinfo
             tabControl1.TabPages.Remove(tbOS);
             tabControl1.TabPages.Remove(tbProc);
             tabControl1.TabPages.Remove(tbSoftware);
+            tabControl1.TabPages.Remove(tbEV);
             tabControl1.TabPages.Add(tbBasic);
             básicoToolStripMenuItem.Checked = true;
-            tabControl1.TabPages.Add(tbCompint);
-            componentesEnGeneralToolStripMenuItem.Checked = true;
-            tabControl1.TabPages.Add(tbMem);
-            memoriasToolStripMenuItem.Checked = true;
             tabControl1.TabPages.Add(tbOS);
             sistemaOperativoToolStripMenuItem.Checked = true;
+            tabControl1.TabPages.Add(tbCompint);
+            componentesEnGeneralToolStripMenuItem.Checked = true;
             tabControl1.TabPages.Add(tbProc);
             procesadorToolStripMenuItem.Checked = true;
+            tabControl1.TabPages.Add(tbMem);
+            memoriasToolStripMenuItem.Checked = true;
             tabControl1.TabPages.Add(tbSoftware);
             softwareToolStripMenuItem.Checked = true;
+            tabControl1.TabPages.Add(tbEV);
+            variablesDeEntornoToolStripMenuItem.Checked = true;
         }
 
         private void copiarTodoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -572,8 +587,147 @@ namespace syinfo
                         cb.AppendLine();
                     }
                     break;
+                case 6:
+                    foreach (DataGridViewRow Row in dataGridView7.Rows)
+                    {
+                        foreach (DataGridViewColumn Column in dataGridView6.Columns)
+                        {
+                            cb.Append(Row.Cells[Column.Index].FormattedValue.ToString() + " | ");
+                        }
+                        cb.AppendLine();
+                    }
+                    break;
             }
             Clipboard.SetText(cb.ToString());
+        }
+
+        private void exportarListaVisibleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            SaveFileDialog exportarTXT = new SaveFileDialog();
+            exportarTXT.Title = "Elige dónde vas a guardar el archivo";
+            exportarTXT.Filter = "Archivo de texto sin formato|*.txt";
+            if (exportarTXT.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    using (exportarTXT)
+                    {
+                        string dataTXT = "";
+                        switch (tabControl1.SelectedIndex)
+                        {
+                            case 0:
+                                foreach (DataGridViewRow Row in dataGridView1.Rows)
+                                {
+                                    foreach (DataGridViewColumn Column in dataGridView4.Columns)
+                                    {
+                                        if (Row.Cells[Column.Index].FormattedValue.ToString() != "") { dataTXT += Row.Cells[Column.Index].FormattedValue.ToString() + " | "; }
+                                    }
+                                    dataTXT += Environment.NewLine;
+                                }
+                                break;
+                            case 1:
+                                foreach (DataGridViewRow Row in dataGridView2.Rows)
+                                {
+                                    foreach (DataGridViewColumn Column in dataGridView4.Columns)
+                                    {
+                                        if (Row.Cells[Column.Index].FormattedValue.ToString() != "") { dataTXT += Row.Cells[Column.Index].FormattedValue.ToString() + " | "; }
+                                    }
+                                    dataTXT += Environment.NewLine;
+                                }
+                                break;
+                            case 2:
+                                foreach (DataGridViewRow Row in dataGridView3.Rows)
+                                {
+                                    foreach (DataGridViewColumn Column in dataGridView4.Columns)
+                                    {
+                                        if (Row.Cells[Column.Index].FormattedValue.ToString() != "") { dataTXT += Row.Cells[Column.Index].FormattedValue.ToString() + " | "; }
+                                    }
+                                    dataTXT += Environment.NewLine;
+                                }
+                                break;
+                            case 3:
+                                foreach (DataGridViewRow Row in dataGridView4.Rows)
+                                {
+                                    foreach (DataGridViewColumn Column in dataGridView4.Columns)
+                                    {
+                                        if (Row.Cells[Column.Index].FormattedValue.ToString() != "") { dataTXT += Row.Cells[Column.Index].FormattedValue.ToString() + " | "; }
+                                    }
+                                    dataTXT += Environment.NewLine;
+                                }
+                                break;
+                            case 4:
+                                foreach (DataGridViewRow Row in dataGridView5.Rows)
+                                {
+                                    foreach (DataGridViewColumn Column in dataGridView5.Columns)
+                                    {
+                                        if (Row.Cells[Column.Index].FormattedValue.ToString() != "") { dataTXT += Row.Cells[Column.Index].FormattedValue.ToString() + " | "; }
+                                    }
+                                    dataTXT += Environment.NewLine;
+                                }
+                                break;
+                            case 5:
+                                foreach (DataGridViewRow Row in dataGridView6.Rows)
+                                {
+                                    foreach (DataGridViewColumn Column in dataGridView6.Columns)
+                                    {
+                                        if (Row.Cells[Column.Index].FormattedValue.ToString() != "") { dataTXT += Row.Cells[Column.Index].FormattedValue.ToString() + " | "; }
+                                    }
+                                    dataTXT += Environment.NewLine;
+                                }
+                                break;
+                            case 6:
+                                foreach (DataGridViewRow Row in dataGridView7.Rows)
+                                {
+                                    foreach (DataGridViewColumn Column in dataGridView7.Columns)
+                                    {
+                                        if (Row.Cells[Column.Index].FormattedValue.ToString() != "") { dataTXT += Row.Cells[Column.Index].FormattedValue.ToString() + " | "; }
+                                    }
+                                    dataTXT += Environment.NewLine;
+                                }
+                                break;
+                        }
+                        dataTXT += Environment.NewLine + Environment.NewLine + "Exportado de Syinfo - " + DateTime.UtcNow.ToString("dd/MM/yy hh:mm:ss"); ;
+                        FileStream fsTXT = File.Create(exportarTXT.FileName);
+                        StreamWriter guardarTXT = new StreamWriter(fsTXT, Encoding.GetEncoding("iso-8859-1"));
+                        guardarTXT.Write(dataTXT);
+                        guardarTXT.Close();
+                        MessageBox.Show("Se ha guardado el archivo.", "Listo.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Ha ocurrido un error al guardar el archivo. Es posible que el programa no tenga permisos para hacerlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void variablesDeEntornoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (variablesDeEntornoToolStripMenuItem.Checked)
+            {
+                tabControl1.TabPages.Remove(tbEV);
+                variablesDeEntornoToolStripMenuItem.Checked = false;
+            }
+            else
+            {
+                tabControl1.TabPages.Add(tbEV);
+                variablesDeEntornoToolStripMenuItem.Checked = true;
+            }
+        }
+
+        private void toolStripStatusLabel2_Click(object sender, EventArgs e)
+        {
+            label1.Visible = true;
+            dataGridView1.Rows.Clear();
+            dataGridView2.Rows.Clear();
+            dataGridView3.Rows.Clear();
+            dataGridView4.Rows.Clear();
+            dataGridView5.Rows.Clear();
+            dataGridView6.Rows.Clear();
+            dataGridView7.Rows.Clear();
+            Carga();
+            label1.Visible = false;
         }
 
     }
