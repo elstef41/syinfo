@@ -1,9 +1,9 @@
 # Syinfo
-## Visor de información básica y avanzada del equipo.
 ![Syinfo 0 8 5 por elstef41](https://user-images.githubusercontent.com/19848495/169536522-8f77a5b9-67d1-4587-b02d-a3f3089caa05.png)
+## Visor de información básica y avanzada del equipo.
 
 ### Funciones principales:
-- Listas organizados en distintas pestañas.
+- Listas organizadas en distintas pestañas.
 - Copiar un elemento de la lista con un clic, o todos los de la pestaña activa al mismo tiempo.
 - Volver a cargar los datos sin tener que reiniciar el programa.
 - Exportar la información en un archivo de texto sin formato (.TXT).
