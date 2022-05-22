@@ -1,7 +1,7 @@
 # Syinfo
 [![Lanzamiento actual](https://img.shields.io/github/v/release/elstef41/syinfo?include_prereleases)](https://github.com/elstef41/syinfo/releases)
 
-![Syinfo 0 9 0 por elstef41](https://user-images.githubusercontent.com/19848495/169703763-f4d68773-3515-49cb-98cc-18cffec3af0f.png)
+![Syinfo 0 9 0 por elstef41](https://user-images.githubusercontent.com/19848495/169704499-1dd72e02-1827-4a64-b5e9-c5db58109f57.png)
 ## Un visor de información básica y avanzada del equipo para Microsoft Windows.
 
 ### Funciones principales:
