@@ -10,7 +10,7 @@ namespace syinfo
 {
     public partial class acercade : Form
     {
-        Strings st = new Strings();
+        strings st = new strings();
         public acercade()
         {
             InitializeComponent();
