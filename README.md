@@ -1,21 +1,25 @@
 # Syinfo
 [![Lanzamiento actual](https://img.shields.io/github/v/release/elstef41/syinfo?include_prereleases)](https://github.com/elstef41/syinfo/releases)
+[![Sourceforge](https://img.shields.io/badge/sourceforge-descargar-green)](https://sourceforge.net/projects/syinfo/files/latest/download)
 
-![Syinfo 0 9 0 por elstef41](https://user-images.githubusercontent.com/19848495/169704499-1dd72e02-1827-4a64-b5e9-c5db58109f57.png)
+![Syinfo 0 9 5 por elstef41](https://github.com/elstef41/syinfo/assets/19848495/f1f4bc67-90ea-491a-bee7-e42fa4786144)
 ## Un visor de información básica y avanzada del equipo para Microsoft Windows.
 
 ### Funciones principales:
 - Listas organizadas en distintas pestañas.
 - Copiar un elemento de la lista con un clic, o todos los de la pestaña activa al mismo tiempo.
 - Volver a cargar los datos sin tener que reiniciar el programa.
+- Recargar información tras pasar un período de tiempo personalizado.
 - Exportar la información en un archivo de texto sin formato (.TXT).
+- Multilenguaje: disponible en español e inglés.
 
-### Requisitos
-* Windows 7 o superior.
+## Requisitos
+### Para ejecutar Syinfo
+* Windows XP o superior.
 * .NET Framework 2 o superior.
 
-...para compilar:
-* Visual Studio 2010 o superior (por retrocompatibilidad se recomienda la más cercana a 2010).
+### Para compilar
+* Visual Studio 2010 o Visual C# 2010 Express. En versiones posteriores pueden surgir errores de compatibilidad.
 
 ### Estado preliminar
 Syinfo se encuentra en fase de pruebas. Esto implica que es probable encontrar bugs en tiempo de ejecución. De este modo, cualquier error que se reporte en el tracker será agradecido.
